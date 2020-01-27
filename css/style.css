@@ -324,7 +324,7 @@ h2 {
   font-family: "Helvetica", serif; }
 
 .showcase__bg-img {
-  background: url("../../images/girl-earings.jpg");
+  background: url("../images/girl-earings.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
