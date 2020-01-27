@@ -371,7 +371,7 @@ cart.addEventListener('click', function(e) {
     store.find(item => {
       if(item.id == id) {
        
-        total = total - item.listing
+        total = total - item.price;
 
         totalCart.innerHTML = '';
         totalHeader.innerHTML = '';
