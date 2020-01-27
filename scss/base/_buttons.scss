@@ -1,0 +1,63 @@
+.btn {
+    padding: 15px 0;
+    border: 1px solid transparent;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+.btn--small {
+    padding: 15px 30px;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+.btn--large {
+    padding: 25px 47px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: $background_color;
+    background-color: $main_text_color;
+    &:hover {
+        background-color: $background_color;
+        color: $main_text_color;
+    }
+}
+.btn--secondary {
+    background-color: $background_color;
+    color: $main_text_color;
+}
+.btn--primary {
+    background-color: $main_text_color;
+    color: $background_color;
+    min-width: 135px;
+    max-width: 135px;
+    &:hover {
+        background-color: $lines_color;
+        color: $background_color;
+    }
+    @media only screen and(max-width: 768px) {
+        min-width: 120px;
+        max-width: 120px;
+    }
+}
+.btn--primary-transparent {
+    background-color: transparent;
+    padding: 30px 70px;
+    color: $main_text_color;
+    border: 1px solid $main_text_color;
+    &:hover {
+        background-color: $main_text_color;
+        color: $background_color;
+    }
+}
+.removeBtn {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    &:hover,
+    &:active,
+    &:visited {
+        border: none;
+        outline: none;
+    }
+}

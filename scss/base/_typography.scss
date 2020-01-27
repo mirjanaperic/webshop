@@ -1,0 +1,22 @@
+$secondary_font:'Arial', sans-serif;
+$main_font: 'Helvetica', sans-serif;
+$headings_font: 'Helvetica', serif;
+
+p {
+    font-size: 17px;
+    color: $main_text_color;
+}
+a {
+    color: $main_text_color;
+    font-size: 17px;
+}
+
+h2 {
+    font-size: 60px;
+    @media only screen and(max-width: 1200px) {
+        font-size: 40px;
+    }
+    @media only screen and(max-width: 768px) {
+        font-size: 30px;
+    }
+}

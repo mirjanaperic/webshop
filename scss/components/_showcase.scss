@@ -1,0 +1,206 @@
+.banner-content {
+    min-height: 816px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 4px solid $main_text_color;
+    width: 100%;
+    @media only screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
+}
+.slide__title {
+    color: $main_text_color;
+    padding-bottom: 40px;   
+    font-family: $headings_font;
+}
+.showcase__bg-img {
+    background:  url('../../images/girl-earings.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+    @media only screen and (max-width: 1200px) {
+        height: 400px;
+        width: 100%;
+    }
+}
+.showcase__img {
+    display: none;
+    @media only screen and (max-width: 1200px) {
+        display: block;
+    }
+}
+.banner-content__part {
+    flex-basis: 50%;
+    max-width: 50%;
+
+     @media only screen and (max-width: 1200px) {
+        flex-basis: 100%;
+        max-width: 100%;
+        height: 100vh;
+        width: 100%;
+    }
+}
+.banner-text {
+    background-color: $secondary_background;
+    position: relative;
+    height: 100%;  
+    @media only screen and (max-width: 1200px) {
+        border-bottom: 4px solid $main_text_color;
+    } 
+}
+.banner-img {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.slide__text {
+    line-height: 1.5;
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    flex-basis: 50%;
+    max-width: 50%;
+    @media only screen and (max-width: 1200px) {
+        left: 45%;
+     }
+    @media only screen and (max-width: 768px) {
+       margin-top: 40px;
+    }
+    
+}
+.slide__inner {
+    .btn {
+        margin-right: 20px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        outline: none;
+        font-family: $secondary_font;
+        @media only screen and (max-width: 1600px) {
+            margin-bottom: 20px;
+            padding: 20px 50px;
+        }
+        @media only screen and (max-width: 768px) {
+            padding: 15px 40px;
+        }
+        @media only screen and (max-width: 375px) {
+            padding: 10px 15px;
+            font-size: 10px;
+        }
+
+    }
+}
+.arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-right__body {
+    height: 3px;
+    width: 40px;
+    background-color: $main_text_color;
+}
+.arrow-right__head {
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid $main_text_color;
+    
+}
+.slide__img {
+    position: absolute;
+    top: 45%;
+    left: 100%;
+    transform: translate(-50%, -50%);    
+    flex-basis: 50%;
+    max-width: 50%;
+    img {
+        width: 15vw;
+    }
+    @media only screen and (max-width: 1200px) {
+        left: 70%;
+    }
+    @media only screen and (max-width: 768px) {
+        top: 50%;
+    }
+    @media only screen and (max-width: 500px) {
+        left: 80%;
+    }
+}
+// Slider btns
+.slider-btns {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.slider-btn {
+    width: 115px;
+    height: 115px;
+    line-height: 115px;
+    color: $secondary_text_color;
+    font-size: 20px;
+    @media only screen and (max-width: 1600px) {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+    }
+}
+.slider-btn--left {
+    background-color: $background_color;
+    color: $main_text_color;
+}
+.slider-btn--right {
+    background-color: $secondary_color;
+    color: $background_color;
+}
+// Fixed dots navigation
+.dots {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.dot-link {
+    background-color: $main_text_color;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin: 20px 0;
+    margin-left: 55px;
+    z-index: 15;
+    display: inline-block;
+    @media only screen and (max-width: 768px) {
+        margin-left: 35px;
+    }
+} 
+.active {
+    height: 14px;
+    width: 14px;
+}
+.active-blue {
+    background-color: $main_text_color;
+}
+.active-black {
+    background-color: $secondary_background;
+}
+.fixed {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    left: 0;
+    top: 23%;
+    z-index: 10;
+}
+

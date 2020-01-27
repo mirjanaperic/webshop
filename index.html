@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <ul class="header__list header__list--first">
+                    <li class="header__item header__logo">
+                        <a href="#">
+                            Earings
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__item-link">
+                            Browse products
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__item-link">
+                            Company info 
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__list header__list--second">
+                    <li class="header__item total-wrapp">
+                        <i class="total-icon fas fa-shopping-cart"></i>
+                        <div class="header-cart__counter" id="js-header-cart__counter">0</div>
+                        <div class="header-cart" id="js-header-cart">
+                           <div class="header-cart-inner">
+                                <img class="header-cart__img" id="js-header-cart__img" src="/" alt="">
+                                <div>
+                                    <h3 class="header-cart__brand"  id="js-header-cart__brand">Lorem</h3>
+                                </div>
+                                <span class="header-cart__item-no"  id="js-header-cart__item-no"></span> <div class="header-cart__close"  id="js-header-cart__close">x</div>
+                           </div>
+                           <p class="header-cart__info">Has been successfully added to your cart!</p>
+                        </div>
+
+                        <p class="total-text">Total:</p> 
+                        <div class="total-cost">
+                            <span id="js-total-header">0$</span>
+                        </div>
+                    </li>
+                    <li class="header__item">
+                        <a href="#">
+                            Company Name
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header><!-- /header-->
+
+    <!-- Showcase -->
+    <section class="showcase" id="js-showcase">
+        <!-- Banner-content -->
+        <div class="banner-content">
+            <!-- Banner-content-part -->
+            <div class="banner-content__part">
+                <div class="banner-text">
+                    <!-- Banner slider -->
+                    <div class="banner-slider">
+                        <!-- Slide -->
+                        <div class="slide">
+                            <div class="slide__inner">
+                                <div class="slide__text">
+                                    <h2 class="slide__title">
+                                        Butterfly glitter
+                                    </h2>
+                                    <button type="button" class="btn btn--large">
+                                        View earings
+                                    </button>
+                                </div>
+                                <div class="slide__img">
+                                    <img src="./images/earings1.png" class="showcase__image" alt="earings">
+                                </div>
+                            </div>
+                        </div><!--/slide-->
+                        <!-- Slide -->
+                        <div class="slide">
+                            <div class="slide__inner">
+                                <div class="slide__text">
+                                    <h2 class="slide__title">
+                                        Diamond blue
+                                    </h2>
+                                    <button type="button" class="btn btn--large">
+                                        View earings
+                                    </button>
+                                </div>
+                                <div class="slide__img">
+                                    <img src="./images/earings2.png" class="showcase__image" alt="earings">
+                                </div>
+                            </div>
+                        </div><!--/slide-->
+                        <!-- Slide -->
+                        <div class="slide">
+                            <div class="slide__inner">
+                                <div class="slide__text">
+                                    <h2 class="slide__title">
+                                        Perfect shine
+                                    </h2>
+                                    <button type="button" class="btn btn--large">
+                                        View earings
+                                    </button>
+                                </div>
+                                <div class="slide__img">
+                                    <img src="./images/earings3.png" class="showcase__image" alt="earings">
+                                </div>
+                            </div>
+                        </div><!--/slide-->
+
+                    </div><!--/banner slider-->
+                      <!-- Slider btns -->
+                      <div class="slider-btns">
+                        <a onclick="plusDivs(-1)" href="#" class="slider-btns__link">
+                            <div class="slider-btn slider-btn--left">
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+                        </a>
+                        <a onclick="plusDivs(1)" href="#" class="slider-btns__linkd">
+                            <div class="slider-btn slider-btn--right">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div><!--/slider btns-->
+
+                     <!-- Fixed dots navigation -->
+                     <div class="fixed">
+                        <div class="dots" id="dots">
+                            <a class="dot-link active" id="showcase-dot" href="#js-showcase"></a>
+                            <a class="dot-link" id="tables-dot" href="#js-table"></a>
+                            <a class="dot-link" id="timeline-dot" href="#js-timeline"></a>
+                            <a class="dot-link" id="footer-dot" href="#js-footer"></a>
+                        </div>
+                    </div><!--/fixed dots navigation-->
+                </div>
+            </div> <!--/banner-content-part-->
+
+            <!-- Banner-content-part -->
+            <div class="banner-content__part showcase__bg-img">
+                <div class="banner-img">
+                    <img class="showcase__img" src="./images/girl-earings.jpg" alt="girl-photo">
+                </div>
+            </div><!--/banner-content-part-->
+        </div><!--/banner-content-->
+    </section><!--/showcase-->
+
+    <!-- Table -->
+    <section class="table" id="js-table">
+        <!-- Container -->
+        <div class="container">
+             <!-- Search bar -->
+             <div class="search-bar">
+                <div class="search">
+                    <button class="search__btn" type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" class="search__input" placeholder="Type here to search...">
+                </div>
+    
+                <form class="selections">
+                    <div class="select-wrap">
+                        <select name="brand" id="brand" class="select" onchange="makeFlag(this)">
+                            <option value="Brand">Brand</option>
+                            <option value="Swarovski">Swarovski</option>
+                            <option value="ETTIKA">
+                                    ETTIKA</option>
+                            <option value="Jill Jacobs">Jill Jacobs</option>
+                        </select>
+                        <div class="select-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="select-wrap">
+                        <select name="colours" id="colours" class="select" onchange="makeFlag(this)">
+                            <option value="Colours">Colours</option>
+                            <option value="Black">Black</option>
+                            <option value="White">White</option>
+                            <option value="Silver">Silver</option>
+                        </select>
+                        <div class="select-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="select-wrap">
+                        <select name="material" id="materijal" class="select" onchange="makeFlag(this)">
+                            <option value="Material">Material</option>
+                            <option value="Gold">Gold</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Bronze">Bronze</option>
+                        </select>
+                        <div class="select-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>    
+                    
+                    <div class="select-wrap">    
+                        <select name="price" id="price" class="select" onchange="makeFlag(this)">
+                            <option value="Price">Price</option>
+                            <option value="$700.00">$700.00</option>
+                            <option value="$400.00">$400.00</option>
+                            <option value="$500.00">$500.00</option>
+                        </select>
+                        <div class="select-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </form>
+            </div><!--/search-bar-->
+
+            <!-- Flags -->
+            <div class="flag-wrapper">
+                <div class="flag" id="flag"></div>
+            </div><!--/flags-->
+
+            <div class="table-wrap">
+                <div class="items-list__head">
+                    <div class="shop-item-product shop-item-product--head">
+                        <p class="shop-item shop-item--img">Image</p>
+                        <p class="shop-item shop-item--brand">Brand</p>
+                        <p class="shop-item shop-item--price">Price</p>
+                        <p id="js-counter" class="shop-item shop-item--counter">Quantity</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Inserted with JavaScript -->
+            <div id="js-list">
+                <!--shop items will be appended here-->
+            </div><!--/inserted with JavaScript-->
+        </div><!--/container-->
+
+         <!-- My cart -->
+         <div class="my-cart" id="js-shop-cart">
+            <div class="my-cart__inner">
+              <h3 class="my-cart__title">My Cart</h3>
+                 <div class="my-cart__list" id="js-cart-list">
+                     <!-- chart items will be appended here -->
+                 </div>
+                 <div class="checkout">
+                     <div class="total">
+                         <p class="total__text">Total:</p>
+                         <p class="total__sum">
+                             <span class="total__num" id="js-total"></span> 
+                         </p>
+                     </div>
+                     <button class="checkout__btn btn--primary" id="js-check-out">CHECKOUT</button>
+                 </div>
+             </div>
+        </div>
+         <!-- Modal -->
+         <div id="modal" class="modal">
+            <div class="modal__container">
+                <img id="modal__image" src="/" alt="">
+                <div id="js-modal-close" class="modal__close"><i class="fas fa-times"></i></div>
+            </div>
+        </div> <!--/modal-->
+    </section><!--/table-->
+
+    <!-- Timeline -->
+    <section class="timeline" id="js-timeline">
+        <h2 class="timeline__heading">Company Timeline</h2>
+        <div class="chart">
+
+            <!-- Chart slider up-->
+            <div class="chart-slider">
+                <i class="chart__arrow fas fa-caret-left"></i>
+                <div class="chart-item">
+                    <div class="chart-item__inner">
+                        <h4 class="chart-item__year">1978</h4>
+                        <p class="chart-item__paragraph">Vistatech Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, recusandae!  Ipsa, cupiditate?</p>
+                        <p class="chart-item__more">Read more</p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-item__inner">
+                        <h4 class="chart-item__year">1997</h4>
+                        <p class="chart-item__paragraph">Vistatech Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, recusandae! Ipsa, cupiditate?</p>
+                        <p class="chart-item__more">Read more</p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-item__inner">
+                        <h4 class="chart-item__year">1999</h4>
+                        <p class="chart-item__paragraph">Vistatech Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, recusandae! Ipsa, cupiditate?</p>
+                        <p class="chart-item__more">Read more</p>
+                        <div class="line"></div>
+                    </div>    
+                </div>
+                <div class="chart-item">
+                    <div class="chart-item__inner">
+                        <h4 class="chart-item__year">2000</h4>
+                        <p class="chart-item__paragraph">Vistatech Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, recusandae!  Ipsa, cupiditate?</p>
+                        <p class="chart-item__more">Read more</p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <i class="chart__arrow fas fa-caret-right"></i>
+            </div><!--/chart-slider up-->
+            
+            <div class="lines__big-line">
+                <div class="line__big"></div>
+            </div>
+
+            <!-- Chart slider down -->
+            <div class="chart-slider chart-slider--down">
+                <div class="chart-item">
+                    <div class="chart-item__inner">
+                        <div class="line"></div>
+                        <h4 class="chart-item__year">1980</h4>
+                        <p class="chart-item__paragraph">Vistatech Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, recusandae!  Ipsa, cupiditate?</p>
+                        <p class="chart-item__more">Read more</p>
+                    </div>    
+                </div>
+                <div class="chart-item">
+                    <div class="chart-item__inner">
+                        <div class="line"></div>
+                        <h4 class="chart-item__year">1998</h4>
+                        <p class="chart-item__paragraph">Exercitationem, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, cupiditate?</p>
+                        <p class="chart-item__more">Read more</p>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-item__inner">
+                        <div class="line"></div>
+                        <h4 class="chart-item__year">Early 2000s</h4>
+                        <p class="chart-item__paragraph">Vistatech Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, cupiditate?</p>
+                        <p class="chart-item__more">Read more</p>
+                    </div>
+                </div>
+            </div><!--/chart-slider-down-->
+        </div>
+    </section><!--/timeline-->
+
+    <!-- Footer -->
+    <footer class="footer" id="js-footer">
+        <div class="footer-links__wrapper">
+            <ul class="footer__box footer__box--links">
+                <li class="list__item">
+                    <h4 class="list__title">
+                        LINKS 
+                    </h4>
+                </li>
+                <li class="list__item">
+                    <a class="list__link list__link--special" href="#">
+                        CATALOGS  
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a class="list__link" href="#">
+                        CONTACT  
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a class="list__link list__link--special" href="#">
+                        Become a dealer  
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a class="list__link" href="#">
+                        Order forms  
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a class="list__link" href="#">
+                        Login / Register  
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer__box footer__box--dev-test">
+                <li class="list__item">
+                    <h4 class="list__title">
+                        Earings
+                    </h4>
+                </li>
+                <li class="list__item">
+                    <p class="list__text">
+                        47013819 90<sup>th</sup> Novi Sad, Serbia
+                    </p>
+                </li>
+                <li class="list__item">
+                    <p class="list__text">
+                        498237289-23
+                    </p>
+                </li>
+                <li class="list__item">
+                    <p class="list__text">
+                        569287928
+                    </p>
+                </li>
+                <li class="list__item">
+                    <p class="list__text">
+                        hello@earings
+                    </p>
+                </li>
+            </ul>
+            <div class="footer__box footer__box--newsletter">
+                <h4 class="list__title">
+                    NEWSLETTER
+                </h4>
+                <button class="list__btn btn btn--large btn--primary-transparent"><i class="far fa-envelope"></i> <span class="list__btn-text">EMAIL ADDRESS</span> <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="footer__copy">
+            &copy; <b>Earings</b> - 2019 All Rights Reserved.
+        </div>
+    </footer><!--/footer-->    
+
+    <script src="script.js"></script>
+</body>
+</html>

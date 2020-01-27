@@ -1,0 +1,147 @@
+.timeline {
+    padding: 130px 0 200px;
+    background-color: $background_color;
+    @media only screen and(max-width: 375px) {
+        padding: 40px 0;
+    }
+}
+.timeline__heading {
+    text-align: center;
+    color: $main_text_color;
+    padding-bottom: 300px;
+    @media only screen and(max-width: 768px) {
+        padding-bottom: 200px;
+    }
+    @media only screen and(max-width: 375px) {
+        font-size: 35px;
+        padding-bottom: 100px;
+    }
+}
+.lines__small--up {
+    display: flex;
+    justify-content: space-around;
+}
+.line {
+    width: 5px;
+    height: 45px;
+    background-color: $lines_color;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+.line__big {
+    width: 100%;
+    height: 10px;
+    background-color: $lines_color;
+}
+.lines__small--down {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 220px; 
+}
+.chart-slider {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.chart-item {
+    color: $main_text_color;
+    text-align: center;
+    flex-basis: 25%;
+    max-width: 25%;
+    padding-bottom: 40px;
+    position: relative;
+    padding-bottom: 60px;
+    height: 20vh;
+    
+    &:hover {
+        .chart-item__year {
+            color: $secondary_color;
+            font-size: 60px;
+            transition: all .5s ease-in-out;
+            @media only screen and(max-width: 768px) {
+                font-size: 40px;
+            }
+        }
+        .chart-item__paragraph {
+            color: $main_text_color;
+            font-size: 18px;
+            transition: all .5s ease-in-out;
+            @media only screen and(max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+        .chart-item__more {
+            font-size: 18px;
+            transition: all .5s ease-in-out;
+            @media only screen and(max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+        .line {
+            height: 80px;
+            transition: height .5s ease-in-out;
+        }
+    }
+}
+.chart-item__more {
+    padding-bottom: 90px;
+}
+.chart-item__year {
+    font-size: 40px;
+    @media only screen and(max-width: 768px) {
+        font-size: 25px;
+    }
+    @media only screen and(max-width: 375px) {
+        font-size: 20px;
+    }
+}
+.chart-item__paragraph {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 14px;
+    @media only screen and(max-width: 786px) {
+        display: none;
+    }
+}
+.fa-caret-left, .fa-caret-right {
+    color: $secondary_color;
+    font-size: 25px;
+    position: absolute;
+}
+.fa-caret-left {
+    left: 2%;
+    top: 25%;
+}
+.fa-caret-right {
+    right: 2%;
+    top: 25%;
+}
+.chart-slider--down {
+    justify-content: center;
+    .chart-item {
+        &:hover {
+            padding-top: 90px;
+        }
+    }
+    .line {
+        position: absolute;
+        top: 0;
+    }
+    .chart-item__inner {
+        top: 0;
+    }
+    .chart-item__year {
+        padding-top: 80px;
+    }
+}
+.chart-item__inner {
+    position: absolute;
+    bottom: 0;
+}
+.chart__arrow {
+    @media only screen and(max-width: 768px) {
+        display: none;
+    }
+}

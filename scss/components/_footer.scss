@@ -1,0 +1,80 @@
+.footer {
+    background-color: $main_text_color;
+    font-family: $headings_font;
+}
+.footer-links__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    @media only screen and(max-width: 1600px) {
+       padding: 110px 90px;
+    }
+    @media only screen and(max-width: 1000px) {
+        flex-direction: column;
+        height: 100%;
+     }
+     @media only screen and(max-width: 375px) {
+        padding: 80px 60px;
+     }
+}
+.footer__box {
+    flex-basis: 33%;
+    max-width: 33%;
+    line-height: 1.7;
+    @media only screen and(max-width: 1000px) {
+        flex-basis: 100%;
+        max-width: 100%;
+        line-height: 2;
+    }
+    @media only screen and(max-width: 768px) {
+       padding-bottom: 50px;
+    }
+}
+
+.list__link {
+    color: $background_color;
+    font-size: 18px;
+}
+.list__link--special {
+    color: $background_color;
+}
+.list__text {
+    color: $background_color;
+    font-size: 16px;
+}
+.list__title {
+    color: $background_color;
+    font-weight: 100;
+    font-size: 28px;
+    padding-bottom: 40px;
+    letter-spacing: 9px;
+}
+.footer__copy {
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 60px;
+    color: $background_color;
+    background-color: $main_text_color;
+}
+.list__btn {
+    color: $main_text_color;
+    background-color: $secondary_background;
+    font-size: 16px;
+    border: 1px solid $main_text_color;
+    
+    @media only screen and(max-width: 1300px) {
+        padding: 15px 30px;
+    }
+    @media only screen and(max-width: 768px) {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
+.list__btn-text {
+    margin: 0;   
+    @media only screen and(max-width: 375px) {
+        font-size: 10px;
+    } 
+}
