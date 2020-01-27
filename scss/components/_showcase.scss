@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-bottom: 4px solid $main_text_color;
     width: 100%;
     @media only screen and (max-width: 1200px) {
         flex-direction: column;
@@ -19,18 +18,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    
-    @media only screen and (max-width: 1200px) {
-        height: 400px;
-        width: 100%;
-    }
 }
-.showcase__img {
-    display: none;
-    @media only screen and (max-width: 1200px) {
-        display: block;
-    }
-}
+
 .banner-content__part {
     flex-basis: 50%;
     max-width: 50%;
@@ -46,14 +35,15 @@
     background-color: $secondary_background;
     position: relative;
     height: 100%;  
-    @media only screen and (max-width: 1200px) {
-        border-bottom: 4px solid $main_text_color;
-    } 
 }
 .banner-img {
     img {
         width: 100%;
         height: auto;
+    }
+    @media only screen and (max-width: 1200px) {
+        height: 100vh;
+        width: 100%;
     }
 }
 .slide__text {

@@ -312,7 +312,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-bottom: 4px solid #7D9FE7;
   width: 100%; }
   @media only screen and (max-width: 1200px) {
     .banner-content {
@@ -328,16 +327,6 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
-  @media only screen and (max-width: 1200px) {
-    .showcase__bg-img {
-      height: 400px;
-      width: 100%; } }
-
-.showcase__img {
-  display: none; }
-  @media only screen and (max-width: 1200px) {
-    .showcase__img {
-      display: block; } }
 
 .banner-content__part {
   flex-basis: 50%;
@@ -353,13 +342,14 @@ h2 {
   background-color: #000;
   position: relative;
   height: 100%; }
-  @media only screen and (max-width: 1200px) {
-    .banner-text {
-      border-bottom: 4px solid #7D9FE7; } }
 
 .banner-img img {
   width: 100%;
   height: auto; }
+@media only screen and (max-width: 1200px) {
+  .banner-img {
+    height: 100vh;
+    width: 100%; } }
 
 .slide__text {
   line-height: 1.5;
